@@ -9,7 +9,7 @@ public class Bot {
 
     public static void main(String[] args) throws Exception
     {
-        JDA jda = new JDABuilder("NjExODg2Njc2ODcyMjY1NzQ5.XV2U4Q.8uniovFfsYpQTS-zGkVKr01HIuQ").build();
+        JDA jda = new JDABuilder("NjExODg2Njc2ODcyMjY1NzQ5.XWU3Ig.Rv8SRrGHN-WNtq5qamQsULVil0I").build();
 
         jda.addEventListener(new HelloEvent());
         //jda.addEventListener(new nicknameChanger());
