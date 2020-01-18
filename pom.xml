@@ -7,6 +7,18 @@
     <groupId>me.Its3pic</groupId>
     <artifactId>BotOne</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
     <dependencies>
@@ -15,11 +27,25 @@
             <artifactId>JDA</artifactId>
             <version>4.0.0_44</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.sedmelluq/lavaplayer -->
+        <dependency>
+            <groupId>com.sedmelluq</groupId>
+            <artifactId>lavaplayer</artifactId>
+            <version>1.3.33</version>
+        </dependency>
+
     </dependencies>
     <repositories>
         <repository>
             <id>jcenter</id>
             <name>jcenter-bintray</name>
+            <url>https://jcenter.bintray.com</url>
+        </repository>
+
+        <repository>
+            <id>central</id>
+            <name>bintray</name>
             <url>https://jcenter.bintray.com</url>
         </repository>
     </repositories>
