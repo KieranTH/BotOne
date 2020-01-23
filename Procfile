@@ -1,1 +1,1 @@
-worker: java Bot.java
+worker: node Bot.java
