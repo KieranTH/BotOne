@@ -19,5 +19,7 @@ public class Bot {
         jda.addEventListener(new Sound());
         jda.addEventListener(new IoanSpam());
         jda.addEventListener(new Wipe());
+
+        System.out.println("Bot Starting");
     }
 }
