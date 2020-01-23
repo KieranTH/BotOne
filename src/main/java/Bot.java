@@ -1,8 +1,5 @@
-import commands.Calculate;
-import commands.IoanSpam;
+import commands.*;
 import commands.Music.Sound;
-import commands.joke;
-import commands.nicknamer;
 import events.HelloEvent;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -12,7 +9,7 @@ public class Bot {
 
     public static void main(String[] args) throws Exception
     {
-        JDA jda = new JDABuilder("NjExODg2Njc2ODcyMjY1NzQ5.XiNrRw.F-B8zmXvFywG2y-f-2uhA9A5iLc").build();
+        JDA jda = new JDABuilder("NjExODg2Njc2ODcyMjY1NzQ5.XiohXA.Xk4dHesxv6iGDLDglDCeazF9IIE").build();
 
         jda.addEventListener(new HelloEvent());
         //jda.addEventListener(new nicknameChanger());
@@ -21,5 +18,6 @@ public class Bot {
         jda.addEventListener(new joke());
         jda.addEventListener(new Sound());
         jda.addEventListener(new IoanSpam());
+        jda.addEventListener(new Wipe());
     }
 }
