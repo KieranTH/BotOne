@@ -28,12 +28,12 @@ public class joke extends ListenerAdapter {
             in.close();
 
             Random rand = new Random();
-            int newJoke = rand.nextInt(lines.size() + 1);
+            int newJoke = rand.nextInt(lines.size());
 
             String[] message = e.getMessage().getContentRaw().split(" ");
             if(message[0].equalsIgnoreCase("?joke"))
             {
-                if(newJoke == lines.size() + 1)
+                if(message[1].equalsIgnoreCase("ioan"))
                 {
                     e.getChannel().sendMessage("Ioan is a fucking good joke.").queue();
                 }

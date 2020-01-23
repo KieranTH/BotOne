@@ -22,6 +22,10 @@ public class Wipe extends ListenerAdapter {
                 MessageHistory msgHist = new MessageHistory(channel);
                 List<Message> msgs;
                 int i = 0;
+                if(delete > 20)
+                {
+                    return;
+                }
                 while (i < delete)
                 {
                     msgs = msgHist.retrievePast(1).complete();
