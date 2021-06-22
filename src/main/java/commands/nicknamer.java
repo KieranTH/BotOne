@@ -60,7 +60,7 @@ public class nicknamer extends ListenerAdapter {
             ex.printStackTrace();
         } catch (net.dv8tion.jda.api.exceptions.HierarchyException ex)
         {
-            e.getChannel().sendMessage("Error -  cannot modify roles above or equal to mine... cunt").queue();
+            e.getChannel().sendMessage("Error -  cannot modify roles above or equal to mine...").queue();
             System.out.println("Cannot modify Users Roles");
         }
     }
