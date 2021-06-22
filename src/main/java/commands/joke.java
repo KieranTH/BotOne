@@ -33,14 +33,8 @@ public class joke extends ListenerAdapter {
             String[] message = e.getMessage().getContentRaw().split(" ");
             if(message[0].equalsIgnoreCase("?joke"))
             {
-                if(message[1].equalsIgnoreCase("ioan"))
-                {
-                    e.getChannel().sendMessage("Ioan is a fucking good joke.").queue();
-                }
-                else{
                     line = lines.get(newJoke);
                     e.getChannel().sendMessage(line).queue();
-                }
 
             }
 
