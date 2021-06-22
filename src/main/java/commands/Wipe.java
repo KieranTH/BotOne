@@ -33,7 +33,7 @@ public class Wipe extends ListenerAdapter {
                     i++;
                 }
             } catch (NumberFormatException event) {
-                e.getChannel().sendMessage("Invalid Number given, stop being a prick").queue();
+                e.getChannel().sendMessage("Invalid Number given.").queue();
             }
 
 
@@ -59,7 +59,7 @@ public class Wipe extends ListenerAdapter {
                     }
                     catch(NumberFormatException event)
                     {
-                        e.getChannel().sendMessage("Number given is not valid... stop being a stupid prick").queue();
+                        e.getChannel().sendMessage("Number given is not valid...").queue();
                     }
 
 
